@@ -9,12 +9,12 @@ class FireBaseMessageService: FirebaseMessagingService() {
         super.onNewToken(p0)
     }
 
-    override fun onMessageReceived(p0: RemoteMessage) {
-        super.onMessageReceived(p0)
-        super.onMessageReceived(p0)
-        NotificationUtils.createNotification(applicationContext,
-            p0.notification?.title,
-            p0.notification?.body
-        )
-    }
+    //override fun onMessageReceived(p0: RemoteMessage) {
+        //super.onMessageReceived(p0)
+        //super.onMessageReceived(p0)
+       // NotificationUtils.createNotification(applicationContext,
+           // p0.notification?.title,
+          //  p0.notification?.body
+      //  )
+  //  }
 }

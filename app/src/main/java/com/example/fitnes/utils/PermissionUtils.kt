@@ -1,4 +1,4 @@
-package com.example.fitnes
+package com.example.fitnes.utils
 
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity

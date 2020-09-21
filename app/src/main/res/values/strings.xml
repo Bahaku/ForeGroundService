@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Fitnes</string>
+    <string name="start0">Start</string>
+    <string name="stop">Stop</string>
+    <string name="run">Отсчитает время пробежки</string>
+    <string name="sport">Поможет вам во время зарядки</string>
 </resources>

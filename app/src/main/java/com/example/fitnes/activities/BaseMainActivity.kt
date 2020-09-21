@@ -1,10 +1,11 @@
-package com.example.fitnes
+package com.example.fitnes.activities
 
 import android.annotation.SuppressLint
 import android.content.pm.PackageManager
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fitnes.BuildConfig.Api_Key
+import com.example.fitnes.utils.PermissionUtils
 import com.mapbox.mapboxsdk.Mapbox
 import com.mapbox.mapboxsdk.camera.CameraPosition
 import com.mapbox.mapboxsdk.camera.CameraUpdateFactory

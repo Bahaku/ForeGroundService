@@ -1,11 +1,11 @@
-package com.example.fitnes
+package com.example.fitnes.utils
 
 import android.app.*
 import android.content.Context
-import android.content.Intent
 import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
+import com.example.fitnes.R
 
 object NotificationUtils {
 
@@ -13,15 +13,16 @@ object NotificationUtils {
         private const val CHANNEL_NAME = "CHANNEL_NAME"
         private const val CHANNEL_DESC = "CHANNEL_DESC"
 
-        fun createNotification(context: Context, title: String?, body: String?) {
+        fun createNotification(context: Context): Notification? {
             createNotificationChannel(context)
 
             val builder = NotificationCompat.Builder(context, CHANNEL_ID)
-                .setContentTitle(title)
-                .setContentText(body)
+                .setContentTitle("My Notification")
+                .setContentText("Much longer text that cannot fit one line...")
                 .setSmallIcon(R.drawable.ic_launcher_background)
-                .build()
-            showNotification(builder, context)
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+
+            return builder.build()
 
         }
 
